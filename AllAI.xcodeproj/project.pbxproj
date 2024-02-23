@@ -11,6 +11,18 @@
 		6026F7092B84AAD500262036 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6026F7082B84AAD500262036 /* ContentView.swift */; };
 		6026F70B2B84AAD600262036 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6026F70A2B84AAD600262036 /* Assets.xcassets */; };
 		6026F70F2B84AAD600262036 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6026F70E2B84AAD600262036 /* Preview Assets.xcassets */; };
+		6026F71B2B84C67E00262036 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 6026F71A2B84C67E00262036 /* Localizable.xcstrings */; };
+		6026F7272B84DB6D00262036 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6026F7262B84DB6D00262036 /* Onboarding.swift */; };
+		6026F72D2B84DD0E00262036 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6026F72C2B84DD0E00262036 /* HttpClient.swift */; };
+		6026F72F2B84DF4B00262036 /* AuthApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6026F72E2B84DF4B00262036 /* AuthApp.swift */; };
+		6026F7332B85D40400262036 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6026F7322B85D40400262036 /* ApiError.swift */; };
+		6026F7352B85D8EA00262036 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6026F7342B85D8EA00262036 /* AppConfig.swift */; };
+		6026F7372B85E7C200262036 /* ApiResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6026F7362B85E7C200262036 /* ApiResponseHandler.swift */; };
+		6026F7392B85F2EF00262036 /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6026F7382B85F2EF00262036 /* ApiResponse.swift */; };
+		6026F73D2B861FC500262036 /* OnboardingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6026F73C2B861FC500262036 /* OnboardingScreen.swift */; };
+		6026F7402B86344400262036 /* KeyChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6026F73F2B86344400262036 /* KeyChain.swift */; };
+		6026F74E2B8767E400262036 /* UserDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6026F74D2B8767E400262036 /* UserDefaultsKeys.swift */; };
+		6026F7512B887F4100262036 /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6026F7502B887F4100262036 /* OnboardingModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +32,18 @@
 		6026F70A2B84AAD600262036 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6026F70C2B84AAD600262036 /* AllAI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AllAI.entitlements; sourceTree = "<group>"; };
 		6026F70E2B84AAD600262036 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6026F71A2B84C67E00262036 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		6026F7262B84DB6D00262036 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
+		6026F72C2B84DD0E00262036 /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
+		6026F72E2B84DF4B00262036 /* AuthApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthApp.swift; sourceTree = "<group>"; };
+		6026F7322B85D40400262036 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		6026F7342B85D8EA00262036 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		6026F7362B85E7C200262036 /* ApiResponseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponseHandler.swift; sourceTree = "<group>"; };
+		6026F7382B85F2EF00262036 /* ApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
+		6026F73C2B861FC500262036 /* OnboardingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreen.swift; sourceTree = "<group>"; };
+		6026F73F2B86344400262036 /* KeyChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChain.swift; sourceTree = "<group>"; };
+		6026F74D2B8767E400262036 /* UserDefaultsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKeys.swift; sourceTree = "<group>"; };
+		6026F7502B887F4100262036 /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +76,7 @@
 		6026F7052B84AAD500262036 /* AllAI */ = {
 			isa = PBXGroup;
 			children = (
-				6026F7062B84AAD500262036 /* AllAIApp.swift */,
-				6026F7082B84AAD500262036 /* ContentView.swift */,
+				6026F7152B84C4D800262036 /* Core */,
 				6026F70A2B84AAD600262036 /* Assets.xcassets */,
 				6026F70C2B84AAD600262036 /* AllAI.entitlements */,
 				6026F70D2B84AAD600262036 /* Preview Content */,
@@ -67,6 +90,123 @@
 				6026F70E2B84AAD600262036 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6026F7152B84C4D800262036 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				6026F72A2B84DCF200262036 /* Data */,
+				6026F71D2B84CAEA00262036 /* GlobalEnvironment */,
+				6026F71C2B84C7A400262036 /* Helpers */,
+				6026F7182B84C5FA00262036 /* Utility */,
+				6026F7172B84C5B200262036 /* Main */,
+				6026F7162B84C4E900262036 /* Features */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		6026F7162B84C4E900262036 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				6026F71F2B84CB5E00262036 /* Onboarding */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		6026F7172B84C5B200262036 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				6026F7082B84AAD500262036 /* ContentView.swift */,
+				6026F7062B84AAD500262036 /* AllAIApp.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		6026F7182B84C5FA00262036 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				6026F71A2B84C67E00262036 /* Localizable.xcstrings */,
+				6026F7342B85D8EA00262036 /* AppConfig.swift */,
+				6026F74D2B8767E400262036 /* UserDefaultsKeys.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		6026F71C2B84C7A400262036 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		6026F71D2B84CAEA00262036 /* GlobalEnvironment */ = {
+			isa = PBXGroup;
+			children = (
+				6026F72E2B84DF4B00262036 /* AuthApp.swift */,
+			);
+			path = GlobalEnvironment;
+			sourceTree = "<group>";
+		};
+		6026F71F2B84CB5E00262036 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				6026F7232B84D06C00262036 /* Models */,
+				6026F7202B84CB9500262036 /* Screens */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		6026F7202B84CB9500262036 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				6026F73C2B861FC500262036 /* OnboardingScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		6026F7232B84D06C00262036 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6026F74F2B887F2900262036 /* Entities */,
+				6026F7502B887F4100262036 /* OnboardingModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6026F72A2B84DCF200262036 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				6026F73E2B86341400262036 /* KeyChain */,
+				6026F72B2B84DCFC00262036 /* Remote */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		6026F72B2B84DCFC00262036 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				6026F72C2B84DD0E00262036 /* HttpClient.swift */,
+				6026F7362B85E7C200262036 /* ApiResponseHandler.swift */,
+				6026F7382B85F2EF00262036 /* ApiResponse.swift */,
+				6026F7322B85D40400262036 /* ApiError.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		6026F73E2B86341400262036 /* KeyChain */ = {
+			isa = PBXGroup;
+			children = (
+				6026F73F2B86344400262036 /* KeyChain.swift */,
+			);
+			path = KeyChain;
+			sourceTree = "<group>";
+		};
+		6026F74F2B887F2900262036 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				6026F7262B84DB6D00262036 /* Onboarding.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -111,6 +251,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = 6026F6FA2B84AAD500262036;
 			productRefGroup = 6026F7042B84AAD500262036 /* Products */;
@@ -129,6 +270,7 @@
 			files = (
 				6026F70F2B84AAD600262036 /* Preview Assets.xcassets in Resources */,
 				6026F70B2B84AAD600262036 /* Assets.xcassets in Resources */,
+				6026F71B2B84C67E00262036 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,8 +281,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6026F7392B85F2EF00262036 /* ApiResponse.swift in Sources */,
+				6026F7352B85D8EA00262036 /* AppConfig.swift in Sources */,
+				6026F74E2B8767E400262036 /* UserDefaultsKeys.swift in Sources */,
+				6026F72D2B84DD0E00262036 /* HttpClient.swift in Sources */,
 				6026F7092B84AAD500262036 /* ContentView.swift in Sources */,
+				6026F7372B85E7C200262036 /* ApiResponseHandler.swift in Sources */,
+				6026F7332B85D40400262036 /* ApiError.swift in Sources */,
+				6026F73D2B861FC500262036 /* OnboardingScreen.swift in Sources */,
 				6026F7072B84AAD500262036 /* AllAIApp.swift in Sources */,
+				6026F7402B86344400262036 /* KeyChain.swift in Sources */,
+				6026F7272B84DB6D00262036 /* Onboarding.swift in Sources */,
+				6026F7512B887F4100262036 /* OnboardingModel.swift in Sources */,
+				6026F72F2B84DF4B00262036 /* AuthApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

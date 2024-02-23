@@ -6,3 +6,8 @@
 //
 
 import Foundation
+struct AppConfig{
+   
+   static let scheme: String = "https"
+   static let host: String = "mabanysouq.com"
+}

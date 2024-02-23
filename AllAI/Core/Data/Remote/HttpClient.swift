@@ -27,11 +27,20 @@ enum HttpMethod: String {
 
 class HttpClient {
     
-    static func call(
+    static let shared = HttpClient()
+   private init( ) {}
+    
+    var defaultHeaders : [String:String] = [
+        "Content-Type":"application/json",
+        "Accept":"application/json",
+        "lang":"en"
+        ]
+    
+     func call(
         config :HttpUrlConfig,
         path: String,
         method: HttpMethod,
-        authorizedToken: String? = nil ,
+        
         queryItems: [URLQueryItem]? = nil,
         httpBody: Encodable? = nil
     ) async -> Result<(data:Data, response:URLResponse),Error>{
@@ -48,23 +57,22 @@ class HttpClient {
             return .failure(URLError(.badURL))
         }
         
+        let accessToken = UserDefaults.standard.string(forKey: UserDefaultsKeys.token)
+        if accessToken != nil {
+             defaultHeaders["Authorization"] = "Bearer \(accessToken!)"
+         }
+
         var request = URLRequest(url: url)
         request.httpMethod = method.rawValue
-        
-        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-        request.addValue("application/json", forHTTPHeaderField: "Accept")
-        request.addValue("true", forHTTPHeaderField: "x-mock-match-request-body")
-        
+        for head in defaultHeaders {
+            request.addValue(head.value, forHTTPHeaderField: head.key)
+        }
         if let  httpBody {
             request.httpBody = try? JSONEncoder().encode(httpBody)
         }
-    
-        if let authorizedToken {
-            request.addValue("Bearer \(authorizedToken)", forHTTPHeaderField: "Authorization")
-        }
-      
+        debugPrint(url)
         do {
-            let (data, response) = try await URLSession.shared.data(from: url)
+            let (data, response) = try await URLSession.shared.data(for: request)
             return .success((data, response))
         } catch  {
             return .failure(error)

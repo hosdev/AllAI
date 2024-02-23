@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+struct UserDefaultsKeys {
+   static let token = "token"
+}

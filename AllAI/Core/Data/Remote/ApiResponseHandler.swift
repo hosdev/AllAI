@@ -14,13 +14,20 @@ struct ApiResponseHandler<Model:Codable>{
         }
         
         if let model = try? JSONDecoder().decode(
-            Model.self,
+            GeneralAPIModel<Model>.self,
             from: data
         ) {
-            return .init(status: .completed(model),message: "Success call")
+            return .init(status: .completed(model.data),message: model.message ?? "Success call")
         } else {
-            return .init(status: .failed(ApiError.jsonDecoding), message: "Error decoading")
+            return .init(status: .failed(ApiError.jsonDecoding), message:  "Error decoading")
         }
         
     }
+}
+
+struct GeneralAPIModel<T : Codable>: Codable {
+    let status: Bool
+    let message: String?
+    let data: T
+    let errors: [String]?
 }

@@ -6,27 +6,28 @@
 //
 
 import Foundation
+import AuthenticationServices
 
 struct Credentials {
     var accessToken: String?
     var refreshToken: String?
 }
 
-class Auth: ObservableObject {
+class AuthApp: ObservableObject {
     
-    static let shared: Auth = Auth()
-    private let keychain: UserDefaults = UserDefaults.standard
+   // private let keychain: KeyChain = .init()
+    var credentials:Credentials?
     
     @Published  var loggedIn: Bool = false
     
-    private init() {
+     init() {
         loggedIn = hasAccessToken()
     }
     
     func getCredentials() -> Credentials {
         return Credentials(
-            accessToken: "",
-            refreshToken: ""
+            accessToken: nil,
+            refreshToken: nil
         )
     }
     
@@ -54,5 +55,6 @@ class Auth: ObservableObject {
 //        keychain.removeObject(forKey: KeychainKey.refreshToken.rawValue)
         loggedIn = false
     }
+    
     
 }
