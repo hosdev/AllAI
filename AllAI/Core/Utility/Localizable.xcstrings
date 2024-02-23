@@ -1,0 +1,12 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "Login" : {
+      "extractionState" : "manual"
+    },
+    "Welcome" : {
+
+    }
+  },
+  "version" : "1.0"
+}
