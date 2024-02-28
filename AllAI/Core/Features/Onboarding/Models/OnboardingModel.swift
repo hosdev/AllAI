@@ -7,7 +7,8 @@
 
 import Foundation
 
-class OnboardingModel : ObservableObject{
+
+class OnboardingModel {
     
     init(datasource: HttpClient) {
         self.datasource = datasource
@@ -16,10 +17,9 @@ class OnboardingModel : ObservableObject{
     //MARK: - Properties
     let urlConfig = HttpUrlConfig(scheme: AppConfig.scheme, host: AppConfig.host)
     let datasource : HttpClient
-    
 
-    //MARK: - Fetchers
-    func getOnboardingList() async -> ApiResponse<[Onboarding]>{
+    //MARK: - Methods
+    func getOnboardingListAction() async -> ApiResponse<[Onboarding]>{
         let task =  await Task{
             let result = await datasource.call(
                 config: urlConfig,

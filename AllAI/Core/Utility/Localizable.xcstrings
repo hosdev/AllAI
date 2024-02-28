@@ -4,16 +4,25 @@
     "" : {
 
     },
-    "Hi" : {
+    "Error" : {
 
     },
-    "Hii" : {
+    "History" : {
+
+    },
+    "Home" : {
 
     },
     "Login" : {
       "extractionState" : "manual"
     },
+    "Settings" : {
+
+    },
     "Start" : {
+
+    },
+    "Statistics" : {
 
     }
   },

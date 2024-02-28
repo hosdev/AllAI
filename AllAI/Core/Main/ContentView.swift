@@ -8,16 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
-
-    @EnvironmentObject var authApp : AuthApp
+    
+    @Environment(AuthAppModel.self) var authApp : AuthAppModel
+    
     var body: some View {
         
+        Group {
+            if authApp.loggedIn {
+                RootWrapperScreen()
+            } else {
+                OnboardingScreen()
+            }
+        }.onAppear(perform: {
+            authApp.getCurrentUser()
+        })
         
-        if authApp.loggedIn {
-            Text("Hi")
-        } else {
-            OnboardingScreen()
-        }
         
     }
 }

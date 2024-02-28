@@ -12,7 +12,7 @@ import SwiftUI
 struct OnboardingScreen: View {
     
     //MARK: - Properties
-    @StateObject private var model : OnboardingModel = .init(datasource: HttpClient.shared)
+    private var model : OnboardingModel = .init(datasource: HttpClient.shared)
     @State private var obList: ApiResponse<[Onboarding]> = .init(status: .loading)
     @State private  var selection = 0
     @State private var isLoginPresented = false
@@ -21,13 +21,42 @@ struct OnboardingScreen: View {
     //MARK: - Views
     var body: some View {
         NavigationStack {
-            viewByStatus().navigationDestination(isPresented: $isLoginPresented) {Text("Hii")}
+            FutureView(response: obList) { data in
+                VStack {
+                    TabView(selection: $selection){
+                        ForEach(data.indices, id: \.self) { index in
+                            let ob  = data[index]
+                            VStack(){
+                                AsyncImage(url: URL(string: ob.image)){image in
+                                    image
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                    
+                                }  placeholder: {
+                                    ProgressView()
+                                } .frame(width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.width, alignment: .center)
+                                
+                                Text(ob.title)
+                                    .font(.largeTitle)
+                                    .multilineTextAlignment(.center)
+                                Spacer()
+                                    .frame(height: 40)
+                            }.padding().tag(index)
+                        }
+                     
+                    }
+                    .tabViewStyle(.page)
+                    barItems(showStart:  selection == data.count - 1)
+                }
+            }.navigationDestination(isPresented: $isLoginPresented) {LoginScreen()}
         }.task {
             getData()
         }
         
     }
-    func barItems(showStart: Bool) -> some View {
+    
+    
+    func barItems(showStart: Bool) ->  some View {
         return Group {
             if  showStart {
                 Button{ isLoginPresented.toggle() } label: {
@@ -45,45 +74,14 @@ struct OnboardingScreen: View {
             }
         }
     }
-    @ViewBuilder
-    func viewByStatus() -> some View {
-        switch obList.status {
-        case .loading:
-            ProgressView()
-        case .completed(let obList):
-            VStack {
-                TabView(selection: $selection.animation()){
-                    ForEach(obList) { ob in
-                        VStack(){
-                            AsyncImage(url: URL(string: ob.image)){image in
-                                image
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
-                                
-                            }  placeholder: {
-                                ProgressView()
-                            } .frame(width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.width, alignment: .center)
-                            
-                            Text(ob.title)
-                                .font(.largeTitle)
-                                .multilineTextAlignment(.center)
-                            Spacer()
-                                .frame(height: 40)
-                        }.padding().tag(ob)}}
-                .tabViewStyle(.page)
-                barItems(showStart:  selection == obList.count - 1)
-            }
-        case .failed(let error):
-            Text(error.localizedDescription)
-        }
-    }
+
     
     
     
     //MARK: - Logic
     private func getData() {
         Task { @MainActor in
-            obList = await model.getOnboardingList()
+            obList = await model.getOnboardingListAction()
         }
     }
     private func onNext() {
