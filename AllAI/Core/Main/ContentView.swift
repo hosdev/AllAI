@@ -19,9 +19,7 @@ struct ContentView: View {
             } else {
                 OnboardingScreen()
             }
-        }.onAppear(perform: {
-            authApp.getCurrentUser()
-        })
+        }
         
         
     }

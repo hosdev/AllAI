@@ -27,6 +27,17 @@
 		602FF1C32B8DD245006D7D8A /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602FF1C22B8DD245006D7D8A /* LoginScreen.swift */; };
 		609547C12B8F832E0028C7B8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 609547C02B8F832E0028C7B8 /* GoogleService-Info.plist */; };
 		609547C52B8F85F10028C7B8 /* RootWrapperScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609547C42B8F85F10028C7B8 /* RootWrapperScreen.swift */; };
+		609547C92B8F985F0028C7B8 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609547C82B8F985F0028C7B8 /* HomeScreen.swift */; };
+		609547CC2B8F988E0028C7B8 /* HomeHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609547CB2B8F988E0028C7B8 /* HomeHeader.swift */; };
+		609547CE2B8FA7E30028C7B8 /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609547CD2B8FA7E30028C7B8 /* ColorExtensions.swift */; };
+		609547D42B9103F80028C7B8 /* ChatScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609547D32B9103F80028C7B8 /* ChatScreen.swift */; };
+		609547D62B9105770028C7B8 /* PrimaryTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609547D52B9105770028C7B8 /* PrimaryTextField.swift */; };
+		609547D82B91B5260028C7B8 /* GenerativeAI-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 609547D72B91B5260028C7B8 /* GenerativeAI-Info.plist */; };
+		609547DB2B91B5A60028C7B8 /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609547DA2B91B5A60028C7B8 /* ChatModel.swift */; };
+		609547DE2B91B6E60028C7B8 /* GoogleGenerativeAI in Frameworks */ = {isa = PBXBuildFile; productRef = 609547DD2B91B6E60028C7B8 /* GoogleGenerativeAI */; };
+		609547E12B91BFDD0028C7B8 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609547E02B91BFDD0028C7B8 /* ChatMessage.swift */; };
+		609547E32B91F7420028C7B8 /* ReversedScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609547E22B91F7420028C7B8 /* ReversedScrollView.swift */; };
+		609547E62B9225960028C7B8 /* AppSecureStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609547E52B9225960028C7B8 /* AppSecureStorage.swift */; };
 		60D090E32B8F104B004F5BFC /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 60D090E22B8F104B004F5BFC /* GoogleSignIn */; };
 		60D090E52B8F104B004F5BFC /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 60D090E42B8F104B004F5BFC /* GoogleSignInSwift */; };
 		60D090F32B8F1231004F5BFC /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 60D090F22B8F1231004F5BFC /* Lottie */; };
@@ -65,6 +76,16 @@
 		602FF1C22B8DD245006D7D8A /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		609547C02B8F832E0028C7B8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		609547C42B8F85F10028C7B8 /* RootWrapperScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootWrapperScreen.swift; sourceTree = "<group>"; };
+		609547C82B8F985F0028C7B8 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		609547CB2B8F988E0028C7B8 /* HomeHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeader.swift; sourceTree = "<group>"; };
+		609547CD2B8FA7E30028C7B8 /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
+		609547D32B9103F80028C7B8 /* ChatScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatScreen.swift; sourceTree = "<group>"; };
+		609547D52B9105770028C7B8 /* PrimaryTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryTextField.swift; sourceTree = "<group>"; };
+		609547D72B91B5260028C7B8 /* GenerativeAI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GenerativeAI-Info.plist"; sourceTree = "<group>"; };
+		609547DA2B91B5A60028C7B8 /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
+		609547E02B91BFDD0028C7B8 /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
+		609547E22B91F7420028C7B8 /* ReversedScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReversedScrollView.swift; sourceTree = "<group>"; };
+		609547E52B9225960028C7B8 /* AppSecureStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSecureStorage.swift; sourceTree = "<group>"; };
 		60D090F72B8F19AB004F5BFC /* SocialButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialButton.swift; sourceTree = "<group>"; };
 		60D090F92B8F1A35004F5BFC /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		60D090FC2B8F1ADF004F5BFC /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
@@ -83,6 +104,7 @@
 				60D090E52B8F104B004F5BFC /* GoogleSignInSwift in Frameworks */,
 				60D0910C2B8F43B2004F5BFC /* FirebaseFirestore in Frameworks */,
 				60D0910E2B8F43B2004F5BFC /* FirebaseFirestoreSwift in Frameworks */,
+				609547DE2B91B6E60028C7B8 /* GoogleGenerativeAI in Frameworks */,
 				60D091052B8F22B7004F5BFC /* FirebaseAuth in Frameworks */,
 				60D090F32B8F1231004F5BFC /* Lottie in Frameworks */,
 			);
@@ -116,6 +138,7 @@
 				6026F70C2B84AAD600262036 /* AllAI.entitlements */,
 				609547C02B8F832E0028C7B8 /* GoogleService-Info.plist */,
 				6026F70D2B84AAD600262036 /* Preview Content */,
+				609547D72B91B5260028C7B8 /* GenerativeAI-Info.plist */,
 			);
 			path = AllAI;
 			sourceTree = "<group>";
@@ -145,6 +168,8 @@
 		6026F7162B84C4E900262036 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				609547D12B9103DA0028C7B8 /* Chat */,
+				609547C62B8F983C0028C7B8 /* Home */,
 				609547C22B8F85720028C7B8 /* RootWrapper */,
 				602FF1C02B8DD22A006D7D8A /* Auth */,
 				6026F7522B88C5C700262036 /* Common */,
@@ -218,6 +243,7 @@
 		6026F72A2B84DCF200262036 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				609547E42B92257A0028C7B8 /* SecuareStorage */,
 				6026F73E2B86341400262036 /* KeyChain */,
 				6026F72B2B84DCFC00262036 /* Remote */,
 			);
@@ -301,11 +327,80 @@
 			path = Screens;
 			sourceTree = "<group>";
 		};
+		609547C62B8F983C0028C7B8 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				609547CA2B8F987C0028C7B8 /* Combonents */,
+				609547C72B8F98520028C7B8 /* Screens */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		609547C72B8F98520028C7B8 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				609547C82B8F985F0028C7B8 /* HomeScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		609547CA2B8F987C0028C7B8 /* Combonents */ = {
+			isa = PBXGroup;
+			children = (
+				609547CB2B8F988E0028C7B8 /* HomeHeader.swift */,
+			);
+			path = Combonents;
+			sourceTree = "<group>";
+		};
+		609547D12B9103DA0028C7B8 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				609547D92B91B5990028C7B8 /* Models */,
+				609547D22B9103E40028C7B8 /* Screens */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		609547D22B9103E40028C7B8 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				609547D32B9103F80028C7B8 /* ChatScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		609547D92B91B5990028C7B8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				609547DF2B91BFBD0028C7B8 /* Entities */,
+				609547DA2B91B5A60028C7B8 /* ChatModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		609547DF2B91BFBD0028C7B8 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				609547E02B91BFDD0028C7B8 /* ChatMessage.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		609547E42B92257A0028C7B8 /* SecuareStorage */ = {
+			isa = PBXGroup;
+			children = (
+				609547E52B9225960028C7B8 /* AppSecureStorage.swift */,
+			);
+			path = SecuareStorage;
+			sourceTree = "<group>";
+		};
 		60D090F42B8F1877004F5BFC /* Combonents */ = {
 			isa = PBXGroup;
 			children = (
 				6026F7542B88CD3700262036 /* FutureView.swift */,
 				60D090F92B8F1A35004F5BFC /* LottieView.swift */,
+				609547D52B9105770028C7B8 /* PrimaryTextField.swift */,
+				609547E22B91F7420028C7B8 /* ReversedScrollView.swift */,
 			);
 			path = Combonents;
 			sourceTree = "<group>";
@@ -322,6 +417,7 @@
 			isa = PBXGroup;
 			children = (
 				60D090FC2B8F1ADF004F5BFC /* StringExtensions.swift */,
+				609547CD2B8FA7E30028C7B8 /* ColorExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -373,6 +469,7 @@
 				60D091042B8F22B7004F5BFC /* FirebaseAuth */,
 				60D0910B2B8F43B2004F5BFC /* FirebaseFirestore */,
 				60D0910D2B8F43B2004F5BFC /* FirebaseFirestoreSwift */,
+				609547DD2B91B6E60028C7B8 /* GoogleGenerativeAI */,
 			);
 			productName = AllAI;
 			productReference = 6026F7032B84AAD500262036 /* AllAI.app */;
@@ -407,6 +504,7 @@
 				60D090E12B8F104B004F5BFC /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 				60D090E62B8F1157004F5BFC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				60D090F12B8F1231004F5BFC /* XCRemoteSwiftPackageReference "lottie-spm" */,
+				609547DC2B91B6E60028C7B8 /* XCRemoteSwiftPackageReference "generative-ai-swift" */,
 			);
 			productRefGroup = 6026F7042B84AAD500262036 /* Products */;
 			projectDirPath = "";
@@ -423,6 +521,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6026F70F2B84AAD600262036 /* Preview Assets.xcassets in Resources */,
+				609547D82B91B5260028C7B8 /* GenerativeAI-Info.plist in Resources */,
 				6026F70B2B84AAD600262036 /* Assets.xcassets in Resources */,
 				609547C12B8F832E0028C7B8 /* GoogleService-Info.plist in Resources */,
 				6026F71B2B84C67E00262036 /* Localizable.xcstrings in Resources */,
@@ -437,26 +536,35 @@
 			buildActionMask = 2147483647;
 			files = (
 				6026F7392B85F2EF00262036 /* ApiResponse.swift in Sources */,
+				609547CE2B8FA7E30028C7B8 /* ColorExtensions.swift in Sources */,
 				60D090FA2B8F1A35004F5BFC /* LottieView.swift in Sources */,
+				609547E12B91BFDD0028C7B8 /* ChatMessage.swift in Sources */,
 				6026F7352B85D8EA00262036 /* AppConfig.swift in Sources */,
 				6026F74E2B8767E400262036 /* UserDefaultsKeys.swift in Sources */,
 				6026F72D2B84DD0E00262036 /* HttpClient.swift in Sources */,
 				60D091012B8F1D74004F5BFC /* AppleSignInHelper.swift in Sources */,
+				609547D42B9103F80028C7B8 /* ChatScreen.swift in Sources */,
 				6026F7092B84AAD500262036 /* ContentView.swift in Sources */,
 				60D090F82B8F19AB004F5BFC /* SocialButton.swift in Sources */,
 				6026F7372B85E7C200262036 /* ApiResponseHandler.swift in Sources */,
+				609547CC2B8F988E0028C7B8 /* HomeHeader.swift in Sources */,
 				6026F7332B85D40400262036 /* ApiError.swift in Sources */,
+				609547E62B9225960028C7B8 /* AppSecureStorage.swift in Sources */,
 				60D0910A2B8F4088004F5BFC /* User.swift in Sources */,
+				609547D62B9105770028C7B8 /* PrimaryTextField.swift in Sources */,
 				6026F73D2B861FC500262036 /* OnboardingScreen.swift in Sources */,
 				6026F7072B84AAD500262036 /* AllAIApp.swift in Sources */,
 				6026F7402B86344400262036 /* KeyChain.swift in Sources */,
 				60D090FD2B8F1ADF004F5BFC /* StringExtensions.swift in Sources */,
 				6026F7272B84DB6D00262036 /* Onboarding.swift in Sources */,
 				6026F7552B88CD3700262036 /* FutureView.swift in Sources */,
+				609547DB2B91B5A60028C7B8 /* ChatModel.swift in Sources */,
 				60D091022B8F1D74004F5BFC /* GoogleSignInHelper.swift in Sources */,
 				6026F7512B887F4100262036 /* OnboardingModel.swift in Sources */,
 				6026F72F2B84DF4B00262036 /* AuthAppModel.swift in Sources */,
+				609547C92B8F985F0028C7B8 /* HomeScreen.swift in Sources */,
 				609547C52B8F85F10028C7B8 /* RootWrapperScreen.swift in Sources */,
+				609547E32B91F7420028C7B8 /* ReversedScrollView.swift in Sources */,
 				602FF1C32B8DD245006D7D8A /* LoginScreen.swift in Sources */,
 				60D091072B8F236F004F5BFC /* AppError.swift in Sources */,
 			);
@@ -611,6 +719,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -649,6 +759,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -679,6 +791,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		609547DC2B91B6E60028C7B8 /* XCRemoteSwiftPackageReference "generative-ai-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/generative-ai-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.8;
+			};
+		};
 		60D090E12B8F104B004F5BFC /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
@@ -706,6 +826,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		609547DD2B91B6E60028C7B8 /* GoogleGenerativeAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 609547DC2B91B6E60028C7B8 /* XCRemoteSwiftPackageReference "generative-ai-swift" */;
+			productName = GoogleGenerativeAI;
+		};
 		60D090E22B8F104B004F5BFC /* GoogleSignIn */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 60D090E12B8F104B004F5BFC /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;

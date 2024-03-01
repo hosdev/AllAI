@@ -4,7 +4,13 @@
     "" : {
 
     },
+    "Chat" : {
+
+    },
     "Error" : {
+
+    },
+    "Hi %@" : {
 
     },
     "History" : {
@@ -23,6 +29,9 @@
 
     },
     "Statistics" : {
+
+    },
+    "Welcome Back 🔥" : {
 
     }
   },
